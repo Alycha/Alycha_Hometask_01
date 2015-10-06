@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        /* +1. Factorial n, where n is entered from the keyboard by user.
+        /*1. Factorial n, where n is entered from the keyboard by user.*/
 
         int a = 1;
         int b = 1;
@@ -18,7 +18,7 @@ public class Main {
             a = a * b;
             b++;
         }
-        */
+
 
 
        /*+2. Find the number closest to 10, out of the numbers in m and n variables.
@@ -44,11 +44,33 @@ public class Main {
         Or return "No roots" if there are none.
 
 
-        int a;
-        int b;
-        int c;
-        */
+        System.out.println("Input number a");
+        Scanner readA = new Scanner(System.in);
+        double a = readA.nextDouble();
 
+        System.out.println("Input number b");
+        Scanner readB = new Scanner(System.in);
+        double b = readB.nextDouble();
+
+        System.out.println("Input number c");
+        Scanner readC = new Scanner(System.in);
+        double c = readC.nextDouble();
+
+        double D = Math.pow(b, 2) - 4*a*c; // find Discriminant
+        if (D > 0) {  // 2 roots
+            double x1 = (-b + Math.sqrt(D))/2*a;
+            double x2 = (-b - Math.sqrt(D))/2*a;
+
+            System.out.println("2 roots: x1 = "+x1+" and x2 = "+x2);
+
+        }
+        else if (D == 0) {  // 1 root
+            double x3 = -b/2*a;
+            System.out.println("1 root: x = "+x3);
+
+        }
+        else if (D < 0) {System.out.println("No roots");}  // no roots
+        */
 
 
 
@@ -97,10 +119,6 @@ public class Main {
         }
         System.out.println(LuckyTicket);
          */
-
-
-
-
 
 
     }
