@@ -8,16 +8,18 @@ public class Main {
     public static void main(String[] args) {
         /*1. Factorial n, where n is entered from the keyboard by user.*/
 
-        int a = 1;
-        int b = 1;
-        System.out.println("Input number"); // input n for factorial
-        Scanner readN = new Scanner(System.in);
-        int Number = readN.nextInt();
-        for (int i = 0; i < Number; i++ ) {
-            System.out.println(a);
-            a = a * b;
-            b++;
-        }
+        //неправильная формула - факториал, например 5 - 10, тут же выводится 120. И чисел выводит 6,
+        // хотя по идее факториал высчитывается в n-2 проходов цикла
+//        int a = 1;
+//        int b = 1;
+//        System.out.println("Input number"); // input n for factorial
+//        Scanner readN = new Scanner(System.in);
+//        int Number = readN.nextInt();
+//        for (int i = 0; i < Number; i++ ) {
+//            System.out.println(a);
+//            a = a * b;
+//            b++;
+//        }
 
 
 
@@ -32,6 +34,8 @@ public class Main {
         int Temp1 = 0;
         int Temp2 = 0;
 
+        //не стоит записывать циклы в одну строку - чаще всего пишут так, как показано на примерах на лекциях - гораздо проще читать и понимать
+
         if (m < 10) {Temp1 = 10 - m;} else if (m == 10) {Temp1 = 0;} else if (m > 10) {Temp1 = m - 10;} // find how close to 10 is m
         if (n < 10) {Temp2 = 10 - n;} else if (n == 10) {Temp2 = 0;} else if (n > 10) {Temp2 = n - 10;} // find how close to 10 is n
         if (Temp1 < Temp2) {System.out.println(m+" is closer to 10");} else if (Temp1 == Temp2) // compare what number is closer to 10
@@ -40,7 +44,7 @@ public class Main {
         */
 
 
-        /* 3. Variables a, b & c have real numbers assigned. Find the roots of the quadratic equation ax�+bx+c=0.
+        /* 3. Variables a, b & c have real numbers assigned. Find the roots of the quadratic equation ax�+bx+c=0.
         Or return "No roots" if there are none.
 
 
