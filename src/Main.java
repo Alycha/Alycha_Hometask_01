@@ -9,7 +9,6 @@ public class Main {
         /*1. Factorial n, where n is entered from the keyboard by user.*/
 
         int a = 1;
-        int b = 1;
         System.out.println("Input number"); // input n for factorial
         Scanner readN = new Scanner(System.in);
         int Number = readN.nextInt();
